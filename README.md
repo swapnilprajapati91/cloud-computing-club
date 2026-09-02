@@ -23,25 +23,30 @@ A modern, dynamic website for the Cloud Computing Club at Rama University, built
 4. Explore the `pages/` directory for detailed sections like Events and Team.
 
 ## Project Structure
-```
-cloud-computing-main/
-├── index.html               # Main Landing Page
-├── pages/                   # Inner Pages
-│   ├── events.html          # Events listing
-│   ├── cloud-carnival.html  # Cloud Carnival special event page
-│   ├── team.html            # Team profiles
-│   ├── contact.html         # Contact form & info
-│   └── benefits.html        # About Us & Club Benefits
-├── css/                     # Extracted Stylesheets
-│   ├── index.css            # Landing page styles
-│   ├── events.css           # Events page styles
-│   ├── team.css             # Team page styles
-│   ├── cloud-carnival.css   # Cloud Carnival styles
-│   └── contact.css          # Contact page styles
-├── js/                      # JavaScript
-│   ├── script.js            # Shared logic (Mobile menu, form validation)
-│   └── tailwind-config.js   # Tailwind custom theme configuration
-└── assets/                  # Images and brand assets (e.g., logo)
+```text
+cloud-computing/
+├── index.html                     # Main Landing Page
+├── pages/                         # Inner Pages
+│   ├── events.html                # Events listing
+│   ├── cloud-carnival.html        # Cloud Carnival special event page
+│   ├── team.html                  # Team profiles
+│   ├── contact.html               # Contact form & info
+│   ├── benefits.html              # About Us & Club Benefits
+│   └── system-architecture.html   # System Architecture page
+├── css/                           # Extracted Stylesheets
+│   ├── index.css                  # Landing page styles
+│   ├── events.css                 # Events page styles
+│   ├── team.css                   # Team page styles
+│   ├── cloud-carnival.css         # Cloud Carnival styles
+│   ├── contact.css                # Contact page styles
+│   ├── style.css                  # Global/Additional styles
+│   └── system-architecture.css    # System Architecture styles
+├── js/                            # JavaScript
+│   ├── script.js                  # Shared logic (Mobile menu, form validation)
+│   ├── tailwind-config.js         # Tailwind custom theme configuration
+│   ├── index.js                   # Landing page logic
+│   └── system-architecture.js     # System Architecture logic
+└── assets/                        # Images and brand assets (e.g., logo)
 ```
 
 ## Development
