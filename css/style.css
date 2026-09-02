@@ -1,0 +1,207 @@
+/* =============================================
+   BASE STYLES
+   ============================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0B0F19;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =============================================
+   GLASSMORPHISM COMPONENTS
+   ============================================= */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-nav {
+    background: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =============================================
+   TYPOGRAPHY
+   ============================================= */
+.text-gradient {
+    background: linear-gradient(to right, #00D2FF, #9D4EDD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+.btn-primary {
+    background: linear-gradient(135deg, #00D2FF 0%, #9D4EDD 100%);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, #9D4EDD 0%, #00D2FF 100%);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+.btn-primary:hover::before {
+    opacity: 1;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #00D2FF;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 210, 255, 0.1);
+    box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+    transform: translateY(-2px);
+}
+
+/* =============================================
+   FORM STYLING
+   ============================================= */
+.input-field {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.input-field:focus {
+    border-color: #00D2FF;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* =============================================
+   BACKGROUND ORBS - Mobile Responsive
+   ============================================= */
+.bg-orb {
+    position: fixed;
+    border-radius: 9999px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bg-orb-blue {
+    width: 300px;
+    height: 300px;
+    top: -15%;
+    left: -15%;
+    background: radial-gradient(circle, #00D2FF 0%, transparent 70%);
+    opacity: 0.45;
+    filter: blur(60px);
+    animation: orb-pulse 5s ease-in-out infinite;
+}
+
+.bg-orb-purple {
+    width: 350px;
+    height: 350px;
+    bottom: -15%;
+    right: -15%;
+    background: radial-gradient(circle, #9D4EDD 0%, transparent 70%);
+    opacity: 0.45;
+    filter: blur(60px);
+    animation: orb-pulse 5s ease-in-out infinite 1s;
+}
+
+@media (min-width: 768px) {
+    .bg-orb-blue {
+        width: 550px;
+        height: 550px;
+        filter: blur(100px);
+        opacity: 0.35;
+    }
+    .bg-orb-purple {
+        width: 650px;
+        height: 650px;
+        filter: blur(120px);
+        opacity: 0.35;
+    }
+}
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes orb-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.45; }
+    50% { transform: scale(1.1); opacity: 0.6; }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* =============================================
+   MOBILE RESPONSIVE HERO
+   ============================================= */
+@media (max-width: 640px) {
+    #home h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* =============================================
+   SCROLLBAR
+   ============================================= */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+    background: #9D4EDD;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00D2FF;
+}

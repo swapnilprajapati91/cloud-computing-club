@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #fff; color: #0f172a; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+/* ── NAVBAR ── */
+.top-nav { background: #fff; border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 50; }
+.nav-link { color: #374151; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+.nav-link:hover { color: #1d4ed8; }
+.nav-link.active { color: #1d4ed8; border-bottom: 2px solid #1d4ed8; padding-bottom: 2px; }
+.join-btn { background: #1d4ed8; color: #fff; border-radius: 8px; padding: 9px 20px; font-weight: 600; font-size: 0.875rem; display: flex; align-items: center; gap: 8px; transition: background 0.2s; }
+.join-btn:hover { background: #2563eb; }
+
+/* ── HERO ── */
+.hero-bg { background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 40%, #f5f0ff 100%); position: relative; overflow: hidden; }
+.hero-label { color: #1d4ed8; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+.hero-h1 { font-size: 3.75rem; font-weight: 900; line-height: 1.1; color: #0f172a; }
+.hero-h1 .blue { color: #1d4ed8; }
+.btn-primary { background: #1d4ed8; color: #fff; border-radius: 8px; padding: 12px 28px; font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+.btn-primary:hover { background: #2563eb; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(29,78,216,0.3); }
+.btn-outline { background: transparent; color: #374151; border: 1.5px solid #d1d5db; border-radius: 8px; padding: 12px 24px; font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+.btn-outline:hover { border-color: #1d4ed8; color: #1d4ed8; }
+
+/* cloud illustration */
+.cloud-illustration { position: relative; display: flex; justify-content: center; align-items: center; }
+.cloud-main-circle { width: 300px; height: 220px; background: linear-gradient(135deg, #c7d8ff 0%, #dde8ff 50%, #ede8ff 100%); border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 60px rgba(99,102,241,0.2); }
+.cloud-icon-main { font-size: 7rem; color: #fff; filter: drop-shadow(0 8px 24px rgba(99,102,241,0.4)); }
+.float-card { position: absolute; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; animation: float 4s ease-in-out infinite; }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ── STATS ── */
+.stat-item { text-align: center; }
+.stat-num { font-size: 1.75rem; font-weight: 800; color: #1d4ed8; }
+.stat-label { font-size: 0.8rem; color: #6b7280; font-weight: 500; }
+
+/* ── SECTION LABELS ── */
+.section-label { color: #1d4ed8; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+.section-title { font-size: 1.75rem; font-weight: 800; color: #0f172a; }
+.section-desc { color: #6b7280; font-size: 0.95rem; line-height: 1.7; }
+
+/* ── FEATURE CARDS ── */
+.feature-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 24px 20px; transition: all 0.3s; }
+.feature-card:hover { border-color: #93c5fd; box-shadow: 0 8px 24px rgba(29,78,216,0.08); transform: translateY(-3px); }
+.feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 14px; }
+
+/* ── EVENTS ── */
+.events-bg { background: #f0f4ff; }
+.event-badge { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; }
+.event-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 22px; transition: all 0.3s; }
+.event-card:hover { box-shadow: 0 8px 24px rgba(29,78,216,0.1); transform: translateY(-3px); }
+.event-meta { font-size: 0.78rem; color: #6b7280; display: flex; align-items: center; gap: 6px; }
+
+/* ── ABOUT ── */
+.about-photo { border-radius: 16px; object-fit: cover; width: 100%; height: 260px; }
+.why-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+.why-icon { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+/* ── PROJECTS ── */
+.project-card { display: flex; align-items: flex-start; gap: 14px; padding: 16px; border: 1px solid #e5e7eb; border-radius: 12px; transition: all 0.2s; }
+.project-card:hover { border-color: #93c5fd; background: #f0f4ff; }
+.project-icon { width: 42px; height: 42px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+/* ── TEAM ── */
+.team-mini-card { text-align: center; }
+.team-mini-card img { width: 72px; height: 72px; border-radius: 50%; border: 3px solid #e5e7eb; margin: 0 auto 8px; object-fit: cover; transition: border-color 0.2s; }
+.team-mini-card:hover img { border-color: #1d4ed8; }
+.team-mini-card .mini-name { font-weight: 700; font-size: 0.85rem; color: #0f172a; }
+.team-mini-card .mini-role { font-size: 0.72rem; color: #6b7280; }
+.team-mini-card .mini-socials { display: flex; justify-content: center; gap: 8px; margin-top: 6px; color: #9ca3af; font-size: 0.85rem; }
+.team-mini-card .mini-socials a:hover { color: #1d4ed8; }
+
+/* ── CTA BANNER ── */
+.cta-banner { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%); }
+
+/* ── FOOTER ── */
+.site-footer { background: #0a1628; }
+.footer-link { color: rgba(255,255,255,0.55); font-size: 0.85rem; display: block; margin-bottom: 8px; transition: color 0.2s; }
+.footer-link:hover { color: #60a5fa; }
+.footer-title { color: #fff; font-weight: 600; font-size: 0.9rem; margin-bottom: 14px; }
+.newsletter-input { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px 0 0 8px; padding: 10px 14px; color: #fff; font-size: 0.85rem; width: 100%; outline: none; }
+.newsletter-input::placeholder { color: rgba(255,255,255,0.4); }
+.newsletter-btn { background: #1d4ed8; color: #fff; border-radius: 0 8px 8px 0; padding: 10px 14px; font-size: 0.9rem; }
+.divider { border-color: rgba(255,255,255,0.08); }
+
+/* dots background */
+.dots-bg { background-image: radial-gradient(circle, #c7d2fe 1px, transparent 1px); background-size: 28px 28px; }

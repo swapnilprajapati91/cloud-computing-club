@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Carnival | Cloud Computing Club</title>
+    <script src="../js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="antialiased bg-blue-50/50">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="../index.html" class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="font-bold text-gray-900 text-sm leading-tight">Cloud Computing Club</div>
+                        <div class="text-blue-600 text-[10px] font-bold tracking-wider uppercase mt-0.5">Rama University</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="../index.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">Home</a>
+                    <a href="../index.html#about" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">About Us</a>
+                    <a href="events.html" class="text-blue-600 font-medium text-sm tracking-wide">Events</a>
+                    <a href="team.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">Team</a>
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="btn-primary text-white px-6 py-2.5 rounded-lg font-semibold text-sm tracking-wide ml-4 shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40">
+                        <i class="fa-solid fa-user-plus"></i> Join the Club
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-800 hover:text-blue-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-3 shadow-xl">
+                <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">Home</a>
+                <a href="../index.html#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">About Us</a>
+                <a href="events.html" class="block px-3 py-2 text-base font-medium text-blue-600 bg-blue-50 rounded-md">Events</a>
+                <a href="team.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">Team</a>
+                <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="block w-full text-center mt-4 btn-primary text-white px-6 py-3 rounded-md font-bold shadow-md shadow-blue-500/20">Join the Club</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <a href="events.html" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors text-sm font-medium mb-6">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Events
+                    </a>
+                    <div class="mb-4">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold uppercase px-3 py-1 rounded-full tracking-wider">Featured Event</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4 tracking-tight">
+                        Cloud <span class="text-blue-600">Carnival</span>
+                    </h1>
+                    <p class="text-xl font-bold text-gray-800 mb-2">Play &bull; Think &bull; Build</p>
+                    <p class="text-lg text-gray-600 mb-8">An exciting cloud computing experience featuring interactive rounds, challenges, and team-based missions!</p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-W10Vv6mi4B0rm7bug7ozOcNTKPb3rNiYiHKCPl1Aq-j6pg/viewform?usp=dialog" target="_blank" class="btn-primary px-8 py-3.5 rounded-xl font-bold text-white shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                            <i class="fa-solid fa-ticket"></i> Register Now
+                        </a>
+                    </div>
+                </div>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                    <img src="../assets/events/cloud carnival.png" alt="Cloud Carnival Poster" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="py-16 bg-blue-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Date -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0">
+                        <i class="fa-regular fa-calendar text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Date</h3>
+                        <p class="text-gray-600 text-sm font-medium mb-1">3 September 2026</p>
+                        <p class="text-gray-500 text-xs">Thursday</p>
+                    </div>
+                </div>
+                <!-- Venue -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Venue</h3>
+                        <p class="text-gray-600 text-sm font-medium mb-1">FET, Rama University</p>
+                        <p class="text-gray-500 text-xs">Mandhana, Kanpur</p>
+                    </div>
+                </div>
+                <!-- Requirements -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0">
+                        <i class="fa-solid fa-users text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Team Size</h3>
+                        <p class="text-gray-600 text-sm font-medium mb-1">3-4 Participants</p>
+                        <p class="text-gray-500 text-xs">Anyone interested can join!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rounds -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">Event Rounds</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Round 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-t-blue-500 relative overflow-hidden group hover:shadow-md transition-shadow">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform"></div>
+                        <div class="text-xs font-bold text-blue-500 tracking-wider uppercase mb-2 relative z-10">Round 1</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">Cloud Pictionary</h3>
+                        <p class="text-gray-600 relative z-10">Draw it. Guess it. Score it!</p>
+                    </div>
+                    <!-- Round 2 -->
+                    <a href="https://www.menti.com/?code=69812086" target="_blank" class="block bg-white rounded-2xl p-8 shadow-sm border-t-4 border-t-purple-500 relative overflow-hidden group hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform"></div>
+                        <div class="text-xs font-bold text-purple-500 tracking-wider uppercase mb-2 relative z-10">Round 2</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">Cloud Trivia Battle</h3>
+                        <p class="text-gray-600 relative z-10">Challenge your knowledge with fast-paced cloud questions and exciting twists!</p>
+                    </a>
+                    <!-- Round 3 -->
+                    <a href="system-architecture.html" id="round3-link" class="block bg-white rounded-2xl p-8 shadow-sm border-t-4 border-t-orange-500 relative overflow-hidden group hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform"></div>
+                        <div class="flex justify-between items-start relative z-10 mb-2">
+                            <div class="text-xs font-bold text-orange-500 tracking-wider uppercase">Round 3</div>
+                            <div id="round3-timer-display" class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded">Locked</div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">Cloud Mission</h3>
+                        <p class="text-gray-600 relative z-10">Solve real-world cloud challenges, crack tasks, and complete the mission as a team!</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact & Registration -->
+            <div id="register" class="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Build & Play?</h2>
+                    <p class="text-gray-600 mb-6 max-w-xl">Join the Cloud Carnival today! Limited slots available. Exciting prizes and certificates for winners!</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-W10Vv6mi4B0rm7bug7ozOcNTKPb3rNiYiHKCPl1Aq-j6pg/viewform?usp=dialog" target="_blank" class="inline-block btn-primary px-8 py-3.5 rounded-xl font-bold text-white shadow-lg shadow-blue-500/30">
+                        Register Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="md:w-1/3 bg-gray-50 rounded-2xl p-6 border border-gray-100 w-full">
+                    <h3 class="font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">For Any Queries:</h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-3 items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase">President</p>
+                                <p class="font-semibold text-gray-900">Swapnil Prajapati</p>
+                                <p class="text-sm text-blue-600 font-medium"><i class="fa-solid fa-phone w-3 text-xs"></i> 8423836489</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Vice-President</p>
+                                <p class="font-semibold text-gray-900">Mo. Abid</p>
+                                <p class="text-sm text-blue-600 font-medium"><i class="fa-solid fa-phone w-3 text-xs"></i> 8528248949</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Faculty Coordinator</p>
+                                <p class="font-semibold text-gray-900">Devvrat Mathur</p>
+                                <p class="text-sm text-blue-600 font-medium"><i class="fa-solid fa-phone w-3 text-xs"></i> 97556 78483</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer pt-14 pb-8" style="background-color: #0c1222; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t pt-8 flex justify-center items-center text-[13px]" style="border-color:rgba(255,255,255,0.05); color:rgba(255,255,255,0.35);">
+                <span>&copy; 2026 Cloud Computing Club, Rama University. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script>
+        // Round 3 Timer Logic
+        const targetDate = new Date('2026-09-03T15:20:00').getTime();
+        const round3Link = document.getElementById('round3-link');
+        const timerDisplay = document.getElementById('round3-timer-display');
+
+        round3Link.addEventListener('click', function(e) {
+            const now = new Date().getTime();
+            if (now < targetDate) {
+                e.preventDefault();
+                alert("Round 3 will unlock on 03/09/2026 at 3:20 PM!");
+            }
+        });
+
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                timerDisplay.innerHTML = '<span class="text-green-600">Unlocked</span>';
+                timerDisplay.className = "text-xs font-bold bg-green-50 px-2 py-1 rounded";
+            } else {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                let timeStr = "";
+                if (days > 0) timeStr += days + "d ";
+                if (hours > 0 || days > 0) timeStr += hours + "h ";
+                timeStr += minutes + "m " + seconds + "s";
+                
+                timerDisplay.innerText = "Opens in: " + timeStr;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

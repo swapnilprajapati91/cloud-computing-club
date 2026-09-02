@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Architecture Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/system-architecture.css">
+</head>
+<body>
+    <div id="app">
+        <header id="top-bar">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; text-decoration: none; color: #38bdf8; gap: 8px;">
+                <img src="../assets/logo.png" alt="Logo" style="height: 32px; width: auto;">
+                CloudArchitect
+            </a>
+            <div id="question-container">
+                <h2 id="question-text">Select a scenario from the left to begin.</h2>
+                <p id="question-subtext">Drag elements from the right and connect them.</p>
+            </div>
+            <div class="header-actions">
+                <div id="team-name-display" style="color: #f8fafc; font-weight: 600; font-size: 1rem; display: none; margin-right: 16px;">👤 Team: <span id="team-name-text"></span></div>
+                <div id="total-score">Score: 0</div>
+                <div id="timer">15:00</div>
+                <button id="submit-btn">Verify Design</button>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <aside id="left-sidebar">
+                <h3>Scenarios</h3>
+                <div class="scenario-list">
+                    <div class="scenario-item active" data-scenario="0">
+                        <h4>1. Basic HA Web App</h4>
+                        <p>Design a basic highly available web architecture.</p>
+                    </div>
+                    <div class="scenario-item" data-scenario="1">
+                        <h4>2. Caching Layer</h4>
+                        <p>Implement a caching layer to improve database read performance.</p>
+                    </div>
+                    <div class="scenario-item" data-scenario="2">
+                        <h4>3. Scalable Web Tier</h4>
+                        <p>Scale out the web servers to handle higher traffic effectively.</p>
+                    </div>
+                    <div class="scenario-item" data-scenario="3">
+                        <h4>4. HA Database</h4>
+                        <p>Design a database architecture with redundancy.</p>
+                    </div>
+                    <div class="scenario-item" data-scenario="4">
+                        <h4>5. Production Ready</h4>
+                        <p>Combine all concepts into a complete production system.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <div id="canvas-container">
+                <svg id="connections-layer"></svg>
+                <div id="canvas" class="dropzone">
+                    <!-- Dropped nodes will appear here -->
+                </div>
+            </div>
+
+            <aside id="sidebar">
+                <h3>Cloud Elements</h3>
+                <div class="element-list">
+                    <div class="draggable-item" data-type="load-balancer">
+                        <span class="icon">⚖️</span>
+                        <span class="label">Load Balancer</span>
+                    </div>
+                    <div class="draggable-item" data-type="web-server">
+                        <span class="icon">🖥️</span>
+                        <span class="label">Web Server</span>
+                    </div>
+                    <div class="draggable-item" data-type="database">
+                        <span class="icon">🗄️</span>
+                        <span class="label">Database</span>
+                    </div>
+                    <div class="draggable-item" data-type="cache">
+                        <span class="icon">⚡</span>
+                        <span class="label">Cache</span>
+                    </div>
+                    <div class="draggable-item" data-type="user">
+                        <span class="icon">👤</span>
+                        <span class="label">User</span>
+                    </div>
+                </div>
+                
+                <div class="instructions">
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Click or drag elements to add them.</li>
+                        <li>Drag from one element's connector dot to another to link them.</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="result-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title">Design Verification</h2>
+            <div id="modal-score" class="modal-score">0/10</div>
+            <p id="modal-quote" class="modal-quote">"Quote goes here"</p>
+            <button id="modal-close" class="modal-close">Continue</button>
+        </div>
+    </div>
+
+    <!-- Team Name Modal -->
+    <div id="team-modal" class="modal-overlay active" style="backdrop-filter: blur(10px);">
+        <div class="modal-content" style="text-align: center;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 12px; color: #38bdf8;">Welcome to Round 3</h2>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">Please enter your Team Name to start the Cloud Mission.</p>
+            <input type="text" id="team-name-input" placeholder="e.g. Cloud Titans" autocomplete="off" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.3); color: white; font-size: 1.1rem; margin-bottom: 24px; outline: none; transition: border-color 0.2s;">
+            <button id="start-challenge-btn" class="modal-close" style="width: 100%;">Start Challenge</button>
+        </div>
+    </div>
+
+    <script src="../js/system-architecture.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Club | Meet Our Team</title>
+    <meta name="description" content="Meet the passionate team driving the Cloud Computing Club at Rama University.">
+    <script src="../js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel='stylesheet' href='../css/team.css'>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="top-nav fixed top-0 w-full z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3">
+                    <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="font-bold text-white text-base leading-tight">Cloud Computing Club</div>
+                        <div class="text-blue-400 text-xs font-semibold tracking-wider uppercase">Rama University</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="benefits.html" class="nav-link">About Us</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="team.html" class="nav-link active">Meet Our Team</a>
+                </div>
+
+                <!-- Join + Mobile -->
+                <div class="flex items-center gap-4">
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="join-btn hidden md:flex">
+                        <i class="fa-solid fa-cloud text-sm"></i> Join Us
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/10">
+            <div class="px-4 py-4 space-y-3">
+                <a href="../index.html" class="nav-link block py-2">Home</a>
+                <a href="benefits.html" class="nav-link block py-2">About Us</a>
+                <a href="events.html" class="nav-link block py-2">Events</a>
+                <a href="team.html" class="nav-link active block py-2">Meet Our Team</a>
+                <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="join-btn inline-flex mt-2">
+                    <i class="fa-solid fa-cloud text-sm"></i> Join Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="hero-badge">OUR STRENGTH</div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-3">
+                        Meet Our Team
+                    </h1>
+                    <div class="w-12 h-1 bg-blue-500 rounded mb-6"></div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6 max-w-lg">
+                        Passionate minds. Diverse skills. One mission â€”<br>
+                        To explore, learn and innovate with Cloud.
+                    </p>
+                    <div class="flex items-center gap-2 text-blue-400 font-semibold">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Together we build the future.</span>
+                    </div>
+                </div>
+
+                <!-- Right Cloud Graphic -->
+                <div class="relative hidden lg:flex justify-center items-center h-56">
+                    <!-- Main cloud -->
+                    <i class="fa-solid fa-cloud text-blue-400" style="font-size:7rem; filter: drop-shadow(0 0 40px rgba(59,130,246,0.7));"></i>
+                    <!-- Second cloud behind -->
+                    <i class="fa-solid fa-cloud text-blue-600 absolute" style="font-size:4.5rem; top:10px; right:60px; opacity:0.7;"></i>
+                    <!-- Server icon in front of cloud -->
+                    <i class="fa-solid fa-server text-white absolute" style="font-size:2.5rem; margin-top:10px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));"></i>
+                    <!-- Floating tech icons -->
+                    <div class="float-icon" style="top:0; right:10px;"><i class="fa-solid fa-code text-blue-300"></i></div>
+                    <div class="float-icon" style="bottom:10px; right:30px;"><i class="fa-solid fa-database text-blue-300"></i></div>
+                    <div class="float-icon" style="top:20px; left:30px;"><i class="fa-solid fa-shield-halved text-blue-300"></i></div>
+                    <div class="float-icon" style="bottom:5px; left:80px;"><i class="fa-solid fa-globe text-blue-300"></i></div>
+                    <!-- Grid lines effect -->
+                    <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(rgba(59,130,246,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.5) 1px, transparent 1px); background-size: 40px 40px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <div class="section-label mb-2">The People Behind the Cloud</div>
+                <h2 class="section-title">Our Core Team</h2>
+                <div class="title-line"></div>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Swapinal Prajapati - President -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Swapinal+Prajapati&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Swapinal Prajapati" class="avatar">
+                    <div class="name">Swapinal Prajapati</div>
+                    <div class="role">President</div>
+                    <div class="desc">Leading the vision and driving the club forward.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mo. Abid - Vice President -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Mo.+Abid&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Mo. Abid" class="avatar">
+                    <div class="name">Mo. Abid</div>
+                    <div class="role">Vice President</div>
+                    <div class="desc">Strategy, planning and team coordination.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Devang - Secretary -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Devang&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Devang" class="avatar">
+                    <div class="name">Devang</div>
+                    <div class="role">Secretary</div>
+                    <div class="desc">Managing club records and administrative tasks.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Jay Kishan Rajpoot - Treasurer -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Jay+Kishan&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Jay Kishan Rajpoot" class="avatar">
+                    <div class="name">Jay Kishan Rajpoot</div>
+                    <div class="role">Treasurer</div>
+                    <div class="desc">Managing club finances and resource allocation.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ayush Gautam - Marketing -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Ayush+Gautam&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Ayush Gautam" class="avatar">
+                    <div class="name">Ayush Gautam</div>
+                    <div class="role">Marketing &amp; PR Secretary</div>
+                    <div class="desc">Building brand presence and outreach campaigns.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Vishal Kumar - Web Master -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Vishal+Kumar&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Vishal Kumar" class="avatar">
+                    <div class="name">Vishal Kumar</div>
+                    <div class="role">Web Master</div>
+                    <div class="desc">Building and maintaining the club's digital presence.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sakshi - Membership Chair -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Sakshi&background=fce7f3&color=be185d&rounded=true&size=128&bold=true" alt="Sakshi" class="avatar">
+                    <div class="name">Sakshi</div>
+                    <div class="role">Membership Chair</div>
+                    <div class="desc">Connecting people and fostering community growth.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Prince Dwivedi - Management Head -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Prince+Dwivedi&background=ede9fe&color=6d28d9&rounded=true&size=128&bold=true" alt="Prince Dwivedi" class="avatar">
+                    <div class="name">Prince Dwivedi</div>
+                    <div class="role">Management Head</div>
+                    <div class="desc">Coordinating operations and driving team efficiency.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mo. Abid - Content Head -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Mo.+Abid+C&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Mo. Abid" class="avatar">
+                    <div class="name">Mo. Abid</div>
+                    <div class="role">Content &amp; Creative Head</div>
+                    <div class="desc">Crafting content that educates and engages.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-solid fa-m"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Chandan - Social Media -->
+                <div class="member-card">
+                    <img src="https://ui-avatars.com/api/?name=Chandan&background=d1fae5&color=065f46&rounded=true&size=128&bold=true" alt="Chandan" class="avatar">
+                    <div class="name">Chandan</div>
+                    <div class="role">Digital &amp; Social Media Head</div>
+                    <div class="desc">Managing social presence and digital campaigns.</div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Bar -->
+            <div class="cta-bar mt-14 px-8 py-5 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                        <i class="fa-solid fa-user-plus text-blue-600"></i>
+                    </div>
+                    <span class="text-gray-700 font-medium">Want to be a part of our team?</span>
+                </div>
+                <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="cta-btn">Join the Club</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer pt-14 pb-8" style="background-color: #0c1222; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div>
+                <div class="flex items-center gap-3 mb-5">
+                    <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="font-bold text-white text-base">Cloud Computing Club</div>
+                        <div class="text-blue-500 text-[11px] font-bold tracking-wider uppercase mt-0.5">RAMA UNIVERSITY</div>
+                    </div>
+                </div>
+                <p class="text-[13px] leading-relaxed" style="color:rgba(255,255,255,0.45);">Empowering students to explore the cloud, build the future and make an impact.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Quick Links</div>
+                <div class="flex flex-col space-y-3">
+                    <a href="../index.html" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">Home</a>
+                    <a href="../index.html#about" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">About Us</a>
+                    <a href="events.html" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">Events</a>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Contact Us</div>
+                <div class="space-y-4 text-[13px]" style="color:rgba(255,255,255,0.5);">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-blue-500 w-4"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rum2425565@ramauniversity.ac.in" target="_blank" class="hover:text-white transition-colors">rum2425565@ramauniversity.ac.in</a>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-blue-500 w-4 mt-1"></i>
+                        <span>Rama University, Kanpur, Uttar<br>Pradesh</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe text-blue-500 w-4"></i>
+                        <span>www.ramauniversity.ac.in/cloudclub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Follow Us</div>
+                <div class="flex gap-2.5">
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-green-500 hover:text-green-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-blue-500 hover:text-blue-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-white hover:text-white" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-github text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cloud_computing_ramauniversity?igsi=emhpY25oaGw1dG9h" target="_blank" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-pink-500 hover:text-pink-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-[13px]" style="border-color:rgba(255,255,255,0.05); color:rgba(255,255,255,0.35);">
+            <span>&copy; 2026 Cloud Computing Club, Rama University. All rights reserved.</span>
+            <span>Built with <i class="fa-solid fa-cloud text-blue-400 mx-1"></i> and <span class="text-blue-400">Passion</span></span>
+        </div>
+    </div>
+</footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+

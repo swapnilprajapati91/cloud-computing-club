@@ -1,0 +1,26 @@
+﻿.contact-hero-bg { background: linear-gradient(135deg, #ffffff 0%, #f0f6ff 100%); position: relative; overflow: hidden; }
+
+.info-card { background: transparent; display: flex; align-items: flex-start; gap: 16px; }
+.info-icon { width: 44px; height: 44px; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(29,78,216,0.08); display: flex; align-items: center; justify-content: center; color: #1d4ed8; font-size: 1.1rem; flex-shrink: 0; }
+
+.form-card { background: #fff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.04); padding: 36px; border: 1px solid #f1f5f9; }
+.input-label { display: block; font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 8px; }
+.form-control { width: 100%; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 16px; font-size: 0.9rem; transition: all 0.2s; outline: none; background: #fff; }
+.form-control:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+.form-control::placeholder { color: #cbd5e1; }
+
+.quick-contact-card { background: #fff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.04); padding: 32px; border: 1px solid #f1f5f9; margin-bottom: 24px; }
+.qc-item { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background 0.2s; border-radius: 8px; }
+.qc-item:last-child { border-bottom: none; padding-bottom: 0; }
+.qc-item:first-child { padding-top: 0; }
+.qc-item:hover { background: #f8fafc; padding-left: 8px; padding-right: 8px; }
+.qc-icon-wrapper { width: 40px; height: 40px; border-radius: 10px; background: #f0f6ff; display: flex; align-items: center; justify-content: center; color: #3b82f6; margin-right: 16px; }
+
+.social-circle { width: 44px; height: 44px; border-radius: 50%; background: #f8fafc; display: flex; align-items: center; justify-content: center; color: #475569; transition: all 0.2s; border: 1px solid #e2e8f0; }
+.social-circle:hover { background: #1d4ed8; color: #fff; border-color: #1d4ed8; transform: translateY(-2px); }
+.social-circle.linkedin:hover { background: #0a66c2; border-color: #0a66c2; }
+.social-circle.instagram:hover { background: #e1306c; border-color: #e1306c; }
+.social-circle.github:hover { background: #24292e; border-color: #24292e; }
+.social-circle.youtube:hover { background: #ff0000; border-color: #ff0000; }
+
+.cta-box { background: linear-gradient(135deg, #f4f7fc 0%, #edf2fa 100%); border-radius: 20px; padding: 36px; border: 1px solid #e2e8f0; position: relative; overflow: hidden; }

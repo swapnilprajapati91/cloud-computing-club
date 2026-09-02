@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Club | Benefits</title>
+    <script src="../js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="antialiased bg-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="../index.html" class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                    <span class="font-bold text-xl md:text-2xl tracking-tight text-gray-900">Cloud Computing <br class="hidden md:block"/><span class="text-blue-600 text-xs md:text-sm block md:inline font-bold">RAMA UNIVERSITY</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="../index.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">Home</a>
+                    <a href="../index.html#about" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">About Us</a>
+                    <a href="events.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">Events</a>
+                    <a href="team.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm tracking-wide">Team</a>
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="btn-primary text-white px-6 py-2.5 rounded-lg font-semibold text-sm tracking-wide ml-4 shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40">
+                        <i class="fa-solid fa-user-plus"></i> Join the Club
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-800 hover:text-blue-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-3 shadow-xl">
+                <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">Home</a>
+                <a href="../index.html#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">About Us</a>
+                <a href="events.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">Events</a>
+                <a href="team.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md">Team</a>
+                <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="block w-full text-center mt-4 btn-primary text-white px-6 py-3 rounded-md font-bold shadow-md shadow-blue-500/20">Join the Club</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8" data-aos="fade-right">
+                    <div class="inline-block">
+                        <span class="text-blue-600 font-bold tracking-[0.2em] text-xs md:text-sm uppercase">Grow. Learn. Connect.</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1]">
+                        Why Join <br> <span class="text-blue-600">Our Club?</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg md:text-xl max-w-lg leading-relaxed font-medium">
+                        Be part of a passionate community that empowers you to learn, build, collaborate, and lead in the world of cloud computing.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="btn-primary shadow-lg shadow-blue-500/30 px-8 py-3.5 text-base">
+                            <i class="fa-solid fa-user-plus mr-2"></i> Join the Club
+                        </a>
+                        <a href="events.html" class="btn-outline px-8 py-3.5 text-base hover:bg-blue-50 text-gray-700 border-gray-300">
+                            <i class="fa-regular fa-calendar mr-2"></i> Explore Events
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative mt-12 lg:mt-0" data-aos="fade-left">
+                    <div class="relative w-full max-w-lg mx-auto aspect-square flex items-center justify-center">
+                        <div class="absolute inset-0 bg-blue-50/50 rounded-[3rem] rotate-6"></div>
+                        <div class="absolute inset-0 bg-blue-100/30 rounded-[3rem] -rotate-3"></div>
+                        
+                        <!-- Main 3D like shape -->
+                        <div class="relative z-10 w-64 h-64 md:w-72 md:h-72 bg-gradient-to-br from-[#e8f0fe] to-[#c7d8ff] rounded-[2rem] shadow-2xl shadow-blue-500/20 flex flex-col items-center justify-center p-8 border-4 border-white transition-transform duration-500 hover:scale-105">
+                             <i class="fa-solid fa-cloud text-[5.5rem] text-blue-500 mb-6 drop-shadow-md"></i>
+                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
+                                <div class="h-3 w-full bg-blue-300 rounded-full opacity-60"></div>
+                                <div class="h-3 w-4/5 bg-blue-300 rounded-full opacity-60"></div>
+                                <div class="h-3 w-full bg-blue-300 rounded-full opacity-60"></div>
+                             </div>
+                             <div class="absolute -top-6 -right-6 w-16 h-16 bg-white rounded-2xl shadow-xl flex items-center justify-center text-blue-600 text-2xl font-bold border-2 border-[#e8f0fe] rotate-12">
+                                <i class="fa-solid fa-code"></i>
+                             </div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute top-8 left-0 md:-left-4 w-28 p-3 bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center gap-2 animate-[float_4s_ease-in-out_infinite]">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">Learn</span>
+                        </div>
+                        
+                        <div class="absolute bottom-16 left-4 md:-left-8 w-28 p-3 bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center gap-2 animate-[float_5s_ease-in-out_infinite_reverse]">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">Collaborate</span>
+                        </div>
+                        
+                        <div class="absolute top-28 right-0 md:-right-8 w-28 p-3 bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center gap-2 animate-[float_4.5s_ease-in-out_infinite_0.5s]">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-code-branch"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">Build</span>
+                        </div>
+                        
+                        <div class="absolute bottom-12 right-6 md:-right-2 w-28 p-3 bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center gap-2 animate-[float_5.5s_ease-in-out_infinite_1s]">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">Innovate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reasons Grid Section -->
+    <section class="py-24 bg-white/50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-3" data-aos="fade-up">
+                <span class="text-blue-600 font-bold tracking-[0.15em] text-xs uppercase">More Than Just Learning</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Great Reasons to Join Us</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-[1.5rem] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(29,78,216,0.08)] hover:-translate-y-1 border border-gray-100 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Hands-on Learning</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">Work on real-world cloud projects, workshops, and labs that strengthen your technical skills.</p>
+                            <div class="w-6 h-1 bg-blue-600 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-[1.5rem] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(34,197,94,0.08)] hover:-translate-y-1 border border-gray-100 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-green-50 flex items-center justify-center text-green-500 text-2xl group-hover:bg-green-500 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Industry Exposure</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">Get insights from industry experts, tech talks, and sessions on emerging cloud technologies.</p>
+                            <div class="w-6 h-1 bg-green-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-[1.5rem] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(168,85,247,0.08)] hover:-translate-y-1 border border-gray-100 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-500 text-2xl group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Build & Innovate</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">Build innovative solutions, participate in hackathons, and turn your ideas into impactful projects.</p>
+                            <div class="w-6 h-1 bg-purple-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-[1.5rem] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(249,115,22,0.08)] hover:-translate-y-1 border border-gray-100 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-orange-50 flex items-center justify-center text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Network & Connect</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">Collaborate with like-minded peers, seniors, and mentors who share your passion for cloud computing.</p>
+                            <div class="w-6 h-1 bg-orange-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-[1.5rem] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(6,182,212,0.08)] hover:-translate-y-1 border border-gray-100 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-cyan-50 flex items-center justify-center text-cyan-500 text-2xl group-hover:bg-cyan-500 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Certifications & Growth</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">Access resources and guidance to earn certifications and accelerate your career growth.</p>
+                            <div class="w-6 h-1 bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-[1.5rem] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(236,72,153,0.08)] hover:-translate-y-1 border border-gray-100 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-500 text-2xl group-hover:bg-pink-500 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Fun & Competitions</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">Take part in exciting events, competitions, and challenges that bring out the best in you.</p>
+                            <div class="w-6 h-1 bg-pink-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer pt-14 pb-8 bg-[#0c1222] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                        <div>
+                            <div class="font-bold text-white text-base">Cloud Computing Club</div>
+                            <div class="text-blue-500 text-[11px] font-bold tracking-wider uppercase mt-0.5">RAMA UNIVERSITY</div>
+                        </div>
+                    </div>
+                    <p class="text-[13px] leading-relaxed text-white/45">Empowering students to explore the cloud, build the future and make an impact.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <div class="font-bold text-white mb-6 text-sm">Quick Links</div>
+                    <div class="flex flex-col space-y-3">
+                        <a href="../index.html" class="text-[13px] text-white/50 hover:text-white transition-colors inline-block">Home</a>
+                        <a href="../index.html#about" class="text-[13px] text-white/50 hover:text-white transition-colors inline-block">About Us</a>
+                        <a href="events.html" class="text-[13px] text-white/50 hover:text-white transition-colors inline-block">Events</a>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <div class="font-bold text-white mb-6 text-sm">Contact Us</div>
+                    <div class="space-y-4 text-[13px] text-white/50">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-blue-500 w-4"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rum2425565@ramauniversity.ac.in" target="_blank" class="hover:text-white transition-colors">rum2425565@ramauniversity.ac.in</a>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-blue-500 w-4 mt-1"></i>
+                            <span>Rama University, Kanpur, Uttar<br>Pradesh</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-globe text-blue-500 w-4"></i>
+                            <span>www.ramauniversity.ac.in/cloudclub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+                    <div class="font-bold text-white mb-6 text-sm">Follow Us</div>
+                    <div class="flex gap-2.5">
+                        <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="w-9 h-9 rounded-lg border border-white/10 text-white/50 flex items-center justify-center transition-all hover:border-green-500 hover:text-green-500">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg border border-white/10 text-white/50 flex items-center justify-center transition-all hover:border-blue-500 hover:text-blue-500">
+                            <i class="fa-brands fa-linkedin text-sm"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg border border-white/10 text-white/50 flex items-center justify-center transition-all hover:border-white hover:text-white">
+                            <i class="fa-brands fa-github text-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cloud_computing_ramauniversity?igsi=emhpY25oaGw1dG9h" target="_blank" class="w-9 h-9 rounded-lg border border-white/10 text-white/50 flex items-center justify-center transition-all hover:border-pink-500 hover:text-pink-500">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-[13px] text-white/35">
+                <span>&copy; 2026 Cloud Computing Club, Rama University. All rights reserved.</span>
+                <span>Built with <i class="fa-solid fa-cloud text-blue-400 mx-1"></i> and <span class="text-blue-400">Passion</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

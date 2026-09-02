@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Club | Learn. Build. Innovate.</title>
+    <meta name="description" content="Cloud Computing Club at Rama University — A student-driven community passionate about Cloud Technologies and building the future together.">
+    <script src="js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAVBAR ════════════════════════════════════════ -->
+<nav class="top-nav" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                <div>
+                    <div class="font-bold text-gray-900 text-base leading-tight">Cloud Computing Club</div>
+                    <div class="text-blue-600 text-[11px] font-bold tracking-wider uppercase mt-0.5">RAMA UNIVERSITY</div>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="pages/team.html" class="nav-link">Team</a>
+            </div>
+
+            <!-- Join + Mobile -->
+            <div class="flex items-center gap-3">
+                <a href="pages/contact.html" class="join-btn hidden md:flex">
+                    <i class="fa-solid fa-envelope text-sm"></i> Contact Us
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100">
+        <div class="px-4 py-4 space-y-3 bg-white">
+            <a href="#home" class="nav-link block py-2">Home</a>
+            <a href="#about" class="nav-link block py-2">About Us</a>
+            <a href="#events" class="nav-link block py-2">Events</a>
+            <a href="pages/team.html" class="nav-link block py-2">Team</a>
+            <a href="pages/contact.html" class="join-btn inline-flex mt-2"><i class="fa-solid fa-envelope text-sm"></i> Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO ════════════════════════════════════════ -->
+<section id="home" class="hero-bg pt-16 min-h-screen flex items-center relative">
+    <div class="dots-bg absolute inset-0 opacity-40"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left -->
+            <div>
+                <div class="hero-label mb-4">Empowering Minds. Shaping the Cloud.</div>
+                <h1 class="hero-h1 mb-6">
+                    Learn. Build.<br>
+                    <span class="blue">Innovate.</span>
+                </h1>
+                <p class="text-gray-500 text-lg leading-relaxed mb-8 max-w-lg">
+                    A student-driven community passionate about Cloud Technologies and building the future together.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="btn-primary">Join the Club <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                    <a href="#about" class="btn-outline">Explore More <i class="fa-regular fa-circle text-sm"></i></a>
+                </div>
+
+
+            </div>
+
+            <!-- Right: Cloud Illustration -->
+            <div class="hidden lg:flex justify-center items-center relative h-[420px]">
+                <!-- Background glow -->
+                <div class="absolute w-72 h-72 rounded-full bg-blue-200/40 blur-3xl"></div>
+                <!-- Main cloud platform -->
+                <div class="relative cloud-illustration">
+                    <!-- Big cloud -->
+                    <i class="fa-solid fa-cloud" style="font-size:10rem; color:#c7d8ff; filter: drop-shadow(0 10px 40px rgba(99,102,241,0.3));"></i>
+                    <!-- Second cloud -->
+                    <i class="fa-solid fa-cloud absolute" style="font-size:6rem; color:#dde8ff; top:10px; right:-20px;"></i>
+                    <!-- Server stack -->
+                    <div class="absolute" style="top:50%; left:50%; transform:translate(-50%,-60%);">
+                        <div style="background: linear-gradient(135deg,#e0e7ff,#c7d2fe); border-radius:16px; padding:18px 22px; box-shadow: 0 8px 32px rgba(99,102,241,0.25);">
+                            <i class="fa-solid fa-server" style="font-size:3rem; color:#4f46e5;"></i>
+                        </div>
+                    </div>
+                    <!-- Floating icons -->
+                    <div class="float-card absolute" style="width:52px;height:52px;top:-10px;left:20px;border-radius:14px; animation-delay: 0s;">
+                        <i class="fa-solid fa-shield-halved text-blue-500 text-xl"></i>
+                    </div>
+                    <div class="float-card absolute" style="width:52px;height:52px;top:0;right:10px;border-radius:14px; animation-delay: 1.5s;">
+                        <i class="fa-solid fa-code text-indigo-500 text-xl"></i>
+                    </div>
+                    <div class="float-card absolute" style="width:52px;height:52px;bottom:20px;left:-10px;border-radius:14px; animation-delay: 2.5s;">
+                        <i class="fa-solid fa-database text-purple-500 text-xl"></i>
+                    </div>
+                    <div class="float-card absolute" style="width:52px;height:52px;bottom:10px;right:0px;border-radius:14px; animation-delay: 0.8s;">
+                        <i class="fa-brands fa-aws text-orange-500 text-xl"></i>
+                    </div>
+                </div>
+                <!-- Small plus decorations -->
+                <div class="absolute top-8 right-8 text-blue-300 text-2xl font-light">+</div>
+                <div class="absolute bottom-16 left-8 text-purple-300 text-xl font-light">+</div>
+                <div class="absolute top-28 left-4 text-indigo-200 text-3xl font-light">+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ WHAT WE DO ════════════════════════════════════════ -->
+<section id="benefits" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-12">
+            <div>
+                <div class="section-label mb-2">What We Do</div>
+                <h2 class="section-title">Turning Ideas into Impact</h2>
+            </div>
+            <p class="section-desc max-w-md md:text-right">We learn, collaborate and build innovative solutions using cloud technologies.</p>
+        </div>
+
+        <!-- 4 Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="feature-card">
+                <div class="feature-icon bg-blue-100">
+                    <i class="fa-solid fa-graduation-cap text-blue-600"></i>
+                </div>
+                <h3 class="font-700 text-gray-900 font-bold text-base mb-2">Learn</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Hands-on workshops, tech talks and resources to upgrade your skills.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon bg-green-100">
+                    <i class="fa-solid fa-handshake text-green-600"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-base mb-2">Collaborate</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Work with like-minded peers and grow through teamwork.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon bg-indigo-100">
+                    <i class="fa-solid fa-code text-indigo-600"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-base mb-2">Build</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Build real-world cloud projects and strengthen your portfolio.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon bg-orange-100">
+                    <i class="fa-solid fa-rocket text-orange-500"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-base mb-2">Innovate</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Explore new technologies and turn your ideas into impactful solutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ EVENTS ════════════════════════════════════════ -->
+<section id="events" class="py-20 events-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-10">
+            <div>
+                <div class="section-label mb-2">Upcoming Events</div>
+                <h2 class="section-title">Stay Updated, Stay Ahead</h2>
+            </div>
+            <a href="pages/events.html" class="text-blue-600 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">View All Events <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+
+        <!-- Event Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+            <!-- Event 3 -->
+            <a href="pages/cloud-carnival.html" class="event-card block cursor-pointer group">
+                <div class="w-full h-48 rounded-xl overflow-hidden mb-5 bg-gray-50 border border-gray-100 relative">
+                    <img src="assets/events/cloud carnival.png" alt="Cloud Carnival 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs font-bold text-blue-600 shadow-sm border border-white/20">
+                        Featured
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-blue-600 transition-colors">Cloud Carnival</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-2">Play &bull; Think &bull; Build - An exciting cloud computing experience!</p>
+                    <div class="space-y-2">
+                        <div class="event-meta flex items-center text-sm text-gray-600"><i class="fa-regular fa-calendar text-blue-500 w-5"></i> Sept 3, 2026</div>
+                        <div class="event-meta flex items-center text-sm text-gray-600"><i class="fa-solid fa-location-dot text-blue-500 w-5"></i> FET, Rama University</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ ABOUT + WHY JOIN ════════════════════════════════════════ -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- About Us -->
+            <div>
+                <div class="section-label mb-2">About Us</div>
+                <h2 class="section-title mb-5">Who We Are</h2>
+                <p class="section-desc mb-4">We are a community of students at Rama University who are passionate about cloud computing, DevOps, AI and emerging technologies.</p>
+                <p class="section-desc mb-8">Our mission is to empower students through learning, collaboration and innovation.</p>
+                <!-- Team photo placeholder -->
+                <div class="w-full h-52 rounded-2xl overflow-hidden border border-gray-200 mb-6 flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+                    <div class="text-center">
+                        <i class="fa-solid fa-users text-5xl text-blue-300 mb-3"></i>
+                        <p class="text-blue-400 font-medium text-sm">Cloud Computing Club Team</p>
+                        <p class="text-blue-300 text-xs">Rama University, Kanpur</p>
+                    </div>
+                </div>
+                <a href="pages/benefits.html" class="btn-primary inline-flex text-sm">Know More About Us <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+
+            <!-- Why Join -->
+            <div>
+                <div class="section-label mb-2">Why Join Us?</div>
+                <h2 class="section-title mb-8">Benefits of Joining</h2>
+
+                <div class="why-item">
+                    <div class="why-icon bg-blue-100"><i class="fa-solid fa-laptop-code text-blue-600"></i></div>
+                    <div>
+                        <div class="font-bold text-gray-900 text-sm mb-1">Hands-on Learning &amp; Projects</div>
+                        <div class="text-gray-500 text-sm">Work on real AWS, GCP, and Azure deployments.</div>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon bg-green-100"><i class="fa-solid fa-chart-line text-green-600"></i></div>
+                    <div>
+                        <div class="font-bold text-gray-900 text-sm mb-1">Industry Exposure</div>
+                        <div class="text-gray-500 text-sm">Guest talks and sessions from cloud professionals.</div>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon bg-purple-100"><i class="fa-solid fa-certificate text-purple-600"></i></div>
+                    <div>
+                        <div class="font-bold text-gray-900 text-sm mb-1">Certifications &amp; Career Growth</div>
+                        <div class="text-gray-500 text-sm">Guided prep for AWS, Azure and GCP certifications.</div>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon bg-indigo-100"><i class="fa-solid fa-network-wired text-indigo-600"></i></div>
+                    <div>
+                        <div class="font-bold text-gray-900 text-sm mb-1">Networking &amp; Mentorship</div>
+                        <div class="text-gray-500 text-sm">Connect with peers, alumni, and industry mentors.</div>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon bg-orange-100"><i class="fa-solid fa-star text-orange-500"></i></div>
+                    <div>
+                        <div class="font-bold text-gray-900 text-sm mb-1">Fun Events &amp; Competitions</div>
+                        <div class="text-gray-500 text-sm">Hackathons, quiz nights, and tech competitions.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ PROJECTS + TEAM ════════════════════════════════════════ -->
+<section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-16 max-w-4xl mx-auto">
+            <!-- Projects (Temporarily Removed) -->
+            <!--
+            <div>
+                <div class="section-label mb-2">Featured Projects</div>
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="section-title">Ideas. Code. Deploy.</h2>
+                    <a href="#" class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">View All Projects <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+                <div class="space-y-4">
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fa-solid fa-cloud text-blue-600 text-lg"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm mb-1">Cloud File Share</div>
+                            <div class="text-gray-500 text-xs mb-2">Secure file sharing platform using AWS S3 and IAM.</div>
+                            <a href="#" class="text-blue-600 text-xs font-semibold flex items-center gap-1"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fa-solid fa-arrows-up-down text-indigo-600 text-lg"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm mb-1">Auto-Scaler</div>
+                            <div class="text-gray-500 text-xs mb-2">Auto-scaling web application on AWS using EC2 &amp; ASG.</div>
+                            <a href="#" class="text-blue-600 text-xs font-semibold flex items-center gap-1"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fa-solid fa-note-sticky text-purple-600 text-lg"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm mb-1">Serverless Notes App</div>
+                            <div class="text-gray-500 text-xs mb-2">A serverless notes app using AWS Lambda &amp; DynamoDB.</div>
+                            <a href="#" class="text-blue-600 text-xs font-semibold flex items-center gap-1"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <!-- Team Preview -->
+            <div>
+                <div class="section-label mb-2">Meet Our Team</div>
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="section-title">Leaders. Builders. Innovators.</h2>
+                    <a href="pages/team.html" class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">View Full Team <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="team-mini-card">
+                        <img src="https://ui-avatars.com/api/?name=Devvrat+Mathur&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Devvrat Mathur">
+                        <div class="mini-name">Devvrat Mathur</div>
+                        <div class="mini-role">Faculty Coordinator</div>
+                        <div class="mini-socials"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                    <div class="team-mini-card">
+                        <img src="https://ui-avatars.com/api/?name=Swapinal+Prajapati&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Swapinal">
+                        <div class="mini-name">Swapinal</div>
+                        <div class="mini-role">President</div>
+                        <div class="mini-socials"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                    </div>
+                    <div class="team-mini-card">
+                        <img src="https://ui-avatars.com/api/?name=Mo.+Abid&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Mo. Abid">
+                        <div class="mini-name">Mo. Abid</div>
+                        <div class="mini-role">Vice President</div>
+                        <div class="mini-socials"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                    </div>
+                    <div class="team-mini-card">
+                        <img src="https://ui-avatars.com/api/?name=Vishal+Kumar&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Vishal">
+                        <div class="mini-name">Vishal Kumar</div>
+                        <div class="mini-role">Web Master</div>
+                        <div class="mini-socials"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                    </div>
+                    <div class="team-mini-card">
+                        <img src="https://ui-avatars.com/api/?name=Ayush+Gautam&background=dbeafe&color=1d4ed8&rounded=true&size=128&bold=true" alt="Ayush">
+                        <div class="mini-name">Ayush Gautam</div>
+                        <div class="mini-role">Marketing</div>
+                        <div class="mini-socials"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CTA BANNER ════════════════════════════════════════ -->
+<section class="cta-banner py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Be a part of our journey in the cloud.</h2>
+        <p class="text-blue-200 mb-8 text-lg">Learn. Build. Together.</p>
+        <a href="pages/join.html" class="inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all text-base shadow-lg">
+            Join the Club Today <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER ════════════════════════════════════════ -->
+<footer class="site-footer pt-14 pb-8" style="background-color: #0c1222; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div>
+                <div class="flex items-center gap-3 mb-5">
+                    <img src="assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="font-bold text-white text-base">Cloud Computing Club</div>
+                        <div class="text-blue-500 text-[11px] font-bold tracking-wider uppercase mt-0.5">RAMA UNIVERSITY</div>
+                    </div>
+                </div>
+                <p class="text-[13px] leading-relaxed" style="color:rgba(255,255,255,0.45);">Empowering students to explore the cloud, build the future and make an impact.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Quick Links</div>
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">Home</a>
+                    <a href="index.html#about" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">About Us</a>
+                    <a href="pages/events.html" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">Events</a>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Contact Us</div>
+                <div class="space-y-4 text-[13px]" style="color:rgba(255,255,255,0.5);">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-blue-500 w-4"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rum2425565@ramauniversity.ac.in" target="_blank" class="hover:text-white transition-colors">rum2425565@ramauniversity.ac.in</a>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-blue-500 w-4 mt-1"></i>
+                        <span>Rama University, Kanpur, Uttar<br>Pradesh</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe text-blue-500 w-4"></i>
+                        <span>www.ramauniversity.ac.in/cloudclub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Follow Us</div>
+                <div class="flex gap-2.5">
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-green-500 hover:text-green-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-blue-500 hover:text-blue-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-white hover:text-white" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-github text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cloud_computing_ramauniversity?igsi=emhpY25oaGw1dG9h" target="_blank" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-pink-500 hover:text-pink-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-[13px]" style="border-color:rgba(255,255,255,0.05); color:rgba(255,255,255,0.35);">
+            <span>&copy; 2026 Cloud Computing Club, Rama University. All rights reserved.</span>
+            <span>Built with <i class="fa-solid fa-cloud text-blue-400 mx-1"></i> and <span class="text-blue-400">Passion</span></span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

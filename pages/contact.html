@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Club | Contact Us</title>
+    <meta name="description" content="Get in touch with the Cloud Computing Club.">
+    <script src="../js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel='stylesheet' href='../css/contact.css'>
+</head>
+<body class="bg-gray-50/50">
+
+<!-- ═══════════════════════════════════════ NAVBAR ════════════════════════════════════════ -->
+<nav class="top-nav" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <a href="../index.html" class="flex items-center gap-3">
+                <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                <div>
+                    <div class="font-bold text-gray-900 text-base leading-tight">Cloud Computing Club</div>
+                    <div class="text-blue-600 text-xs font-semibold tracking-wider uppercase">Rama University</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-7">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About Us</a>
+                <a href="../index.html#events" class="nav-link">Events</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="join-btn hidden md:flex">
+                    <i class="fa-solid fa-user-plus text-sm"></i> Join the Club
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100">
+        <div class="px-4 py-4 space-y-3 bg-white">
+            <a href="../index.html" class="nav-link block py-2">Home</a>
+            <a href="../index.html#about" class="nav-link block py-2">About Us</a>
+            <a href="../index.html#events" class="nav-link block py-2">Events</a>
+            <a href="team.html" class="nav-link block py-2">Team</a>
+            <a href="contact.html" class="nav-link active block py-2">Contact Us</a>
+            <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="join-btn inline-flex mt-2"><i class="fa-solid fa-user-plus text-sm"></i> Join the Club</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO ════════════════════════════════════════ -->
+<section class="contact-hero-bg pt-28 pb-16 relative">
+    <div class="dots-bg absolute inset-0 opacity-30"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left -->
+            <div>
+                <div class="section-label mb-3">We'd love to hear from you</div>
+                <h1 class="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+                    Contact <span class="text-blue-600">Us</span>
+                </h1>
+                <p class="text-gray-500 text-lg leading-relaxed mb-10 max-w-md">
+                    Have a question, suggestion, or collaboration idea?<br>
+                    Reach out to us and we'll get back to you as soon as possible.
+                </p>
+
+                <!-- Info Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Email -->
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm mb-1">Email Us</div>
+                            <div class="text-gray-500 text-xs"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=RUM2425565@ramauniversity.ac.in" target="_blank" class="hover:text-blue-600 transition-colors">RUM2425565@ramauniversity.ac.in</a></div>
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm mb-1">Call Us</div>
+                            <div class="text-gray-500 text-xs"><a href="tel:+918423836489" class="hover:text-blue-600 transition-colors">8423836489</a></div>
+                        </div>
+                    </div>
+                    <!-- Visit -->
+                    <div class="info-card sm:col-span-2 mt-2">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm mb-1">Visit Us</div>
+                            <div class="text-gray-500 text-xs">Rama University, Kanpur,<br>Uttar Pradesh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Graphic -->
+            <div class="hidden lg:flex justify-center items-center relative h-[380px]">
+                <div class="absolute w-64 h-64 rounded-full bg-blue-200/50 blur-3xl"></div>
+                <div class="relative cloud-illustration">
+                    <i class="fa-solid fa-cloud text-blue-300" style="font-size:12rem; filter: drop-shadow(0 20px 40px rgba(59,130,246,0.3));"></i>
+                    
+                    <div class="absolute" style="top:50%; left:50%; transform:translate(-50%,-40%);">
+                        <i class="fa-solid fa-envelope-open-text text-white" style="font-size:5rem; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));"></i>
+                    </div>
+
+                    <!-- Floating Icons -->
+                    <div class="float-card absolute" style="width:60px;height:60px;top:20px;left:0px;border-radius:16px;">
+                        <i class="fa-solid fa-phone text-blue-500 text-2xl"></i>
+                    </div>
+                    <div class="float-card absolute" style="width:60px;height:60px;top:40px;right:-10px;border-radius:16px;">
+                        <i class="fa-solid fa-comment-dots text-indigo-500 text-2xl"></i>
+                    </div>
+                    <div class="float-card absolute" style="width:60px;height:60px;bottom:30px;right:20px;border-radius:16px;">
+                        <i class="fa-solid fa-location-dot text-blue-600 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ MAIN CONTENT ════════════════════════════════════════ -->
+<section class="py-12 pb-24 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            
+            <!-- LEFT: Form -->
+            <div class="form-card">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Send Us a Message</h2>
+                        <p class="text-xs text-gray-500 mt-1">Fill out the form and we'll get back to you.</p>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/rum2425565@ramauniversity.ac.in" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Website Contact Form Submission!">
+
+                    <div class="mb-5">
+                        <label class="input-label">Full Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="input-label">Email Address</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="input-label">Subject</label>
+                        <div class="relative">
+                            <select name="subject" class="form-control appearance-none text-gray-600" required>
+                                <option value="" disabled selected>What is this regarding?</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Join the Club">Join the Club</option>
+                                <option value="Partnership/Sponsorship">Partnership/Sponsorship</option>
+                                <option value="Report an Issue">Report an Issue</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down absolute right-4 top-4 text-gray-400 text-xs pointer-events-none"></i>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="input-label">Message</label>
+                        <textarea name="message" class="form-control h-32 resize-none" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-xl transition-colors shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- RIGHT: Quick Info & Socials -->
+            <div>
+                <!-- Quick Contact Block -->
+                <div class="quick-contact-card">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-900">Quick Contact</h2>
+                            <p class="text-xs text-gray-500 mt-1">Prefer a quick connect? Choose the best way to reach us.</p>
+                        </div>
+                    </div>
+
+                    <div class="qc-item">
+                        <div class="flex items-center">
+                            <div class="qc-icon-wrapper"><i class="fa-regular fa-envelope text-lg"></i></div>
+                            <div>
+                                <div class="font-bold text-gray-900 text-sm mb-0.5">Email</div>
+                                <div class="text-xs text-gray-500"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=RUM2425565@ramauniversity.ac.in" target="_blank" class="hover:text-blue-600 transition-colors">RUM2425565@ramauniversity.ac.in</a></div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                    </div>
+
+                    <div class="qc-item">
+                        <div class="flex items-center">
+                            <div class="qc-icon-wrapper"><i class="fa-solid fa-phone text-lg"></i></div>
+                            <div>
+                                <div class="font-bold text-gray-900 text-sm mb-0.5">Phone</div>
+                                <div class="text-xs text-gray-500"><a href="tel:+918423836489" class="hover:text-blue-600 transition-colors">8423836489</a></div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                    </div>
+
+                    <div class="qc-item">
+                        <div class="flex items-center">
+                            <div class="qc-icon-wrapper"><i class="fa-solid fa-location-dot text-lg"></i></div>
+                            <div>
+                                <div class="font-bold text-gray-900 text-sm mb-0.5">Address</div>
+                                <div class="text-xs text-gray-500">Rama University,<br>Kanpur, Uttar Pradesh 209217</div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                    </div>
+
+
+                </div>
+
+                <!-- Connect With Us Block -->
+                <div class="quick-contact-card !py-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-1">Connect With Us</h2>
+                    <p class="text-xs text-gray-500 mb-5">Follow us on our social channels for updates &amp; more.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="social-circle linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/cloud_computing_ramauniversity?igsi=emhpY25oaGw1dG9h" target="_blank" class="social-circle instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-circle github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-circle youtube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-box mt-10">
+            <div class="absolute -top-24 -left-20 opacity-20"><i class="fa-solid fa-cloud text-blue-400" style="font-size:16rem;"></i></div>
+            <div class="absolute -bottom-20 -right-10 opacity-10"><i class="fa-solid fa-circle-nodes text-indigo-400" style="font-size:12rem;"></i></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="flex items-center gap-6">
+                    <!-- Little graphic -->
+                    <div class="hidden sm:flex relative w-24 h-24">
+                        <i class="fa-solid fa-cloud text-blue-500 text-6xl absolute top-0 left-4 drop-shadow-md"></i>
+                        <i class="fa-solid fa-code text-white text-xl absolute top-4 left-10"></i>
+                        <div class="absolute bottom-2 left-0 flex gap-1">
+                            <div class="w-6 h-6 rounded-full bg-blue-300 border-2 border-white"></div>
+                            <div class="w-6 h-6 rounded-full bg-blue-400 border-2 border-white -ml-2"></div>
+                            <div class="w-6 h-6 rounded-full bg-blue-500 border-2 border-white -ml-2"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Let's Build Something Amazing Together!</h3>
+                        <p class="text-sm text-gray-600 max-w-md">Whether you want to collaborate, learn, or just say hello, we're always excited to connect.</p>
+                    </div>
+                </div>
+                <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2">
+                    Join the Club Today <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER ════════════════════════════════════════ -->
+<footer class="site-footer pt-14 pb-8" style="background-color: #0c1222; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div>
+                <div class="flex items-center gap-3 mb-5">
+                    <img src="../assets/logo.png" alt="Cloud Computing Club Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="font-bold text-white text-base">Cloud Computing Club</div>
+                        <div class="text-blue-500 text-[11px] font-bold tracking-wider uppercase mt-0.5">RAMA UNIVERSITY</div>
+                    </div>
+                </div>
+                <p class="text-[13px] leading-relaxed" style="color:rgba(255,255,255,0.45);">Empowering students to explore the cloud, build the future and make an impact.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Quick Links</div>
+                <div class="flex flex-col space-y-3">
+                    <a href="../index.html" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">Home</a>
+                    <a href="../index.html#about" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">About Us</a>
+                    <a href="events.html" class="text-[13px] hover:text-white transition-colors inline-block" style="color:rgba(255,255,255,0.5);">Events</a>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Contact Us</div>
+                <div class="space-y-4 text-[13px]" style="color:rgba(255,255,255,0.5);">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-blue-500 w-4"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rum2425565@ramauniversity.ac.in" target="_blank" class="hover:text-white transition-colors">rum2425565@ramauniversity.ac.in</a>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-blue-500 w-4 mt-1"></i>
+                        <span>Rama University, Kanpur, Uttar<br>Pradesh</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe text-blue-500 w-4"></i>
+                        <span>www.ramauniversity.ac.in/cloudclub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <div class="font-bold text-white mb-6 text-sm">Follow Us</div>
+                <div class="flex gap-2.5">
+                    <a href="https://chat.whatsapp.com/GcELyEyErH2KfORfuLA9zL" target="_blank" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-green-500 hover:text-green-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-blue-500 hover:text-blue-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-white hover:text-white" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-github text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cloud_computing_ramauniversity?igsi=emhpY25oaGw1dG9h" target="_blank" class="w-9 h-9 rounded-lg border flex items-center justify-center transition-all hover:border-pink-500 hover:text-pink-500" style="border-color:rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-[13px]" style="border-color:rgba(255,255,255,0.05); color:rgba(255,255,255,0.35);">
+            <span>&copy; 2026 Cloud Computing Club, Rama University. All rights reserved.</span>
+            <span>Built with <i class="fa-solid fa-cloud text-blue-400 mx-1"></i> and <span class="text-blue-400">Passion</span></span>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/index.js"></script>
+</body>
+</html>
+
+
